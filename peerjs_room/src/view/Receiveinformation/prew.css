@@ -1,0 +1,17 @@
+#previe{
+    width: 48%;
+    margin-top: 10%;
+}
+#previe span{
+    display: block;
+    text-align: center;
+}
+.video {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#video1{
+    position: relative;
+    width: 50%;
+}

@@ -1,19 +1,12 @@
 import './App.css';
-import { Peer } from "peerjs";
+import HeaderComponent from "./components/header/HeaderComponent";
+import FooterComponent from "./components/footer/FooterComponent";
+import "../src/assets/font/iconfont"
 function App() {
-    const peer = new Peer("pick-an-id");
-    function open(){
-        const peer = new Peer('someid', {
-            host: 'localhost',
-            port: 9000,
-            path: '/peerjs/myapp'
-        });
-    }
   return (
     <div className="App" >
-      <header className="App-header">
-          <button onClick={open}>连接</button>
-      </header>
+        <HeaderComponent></HeaderComponent>
+        <FooterComponent></FooterComponent>
     </div>
   );
 }

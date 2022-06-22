@@ -1,38 +1,41 @@
+@font-face {
+  font-family: ZpixReviewLocal;
+  src: url(./assets/font/zpix.woff2);
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+html,body,#root{
+  font-family: ZpixReviewLocal;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+}
 .App {
-  text-align: center;
+  width: 100%;
+  height: 100%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.left {
+  float: left;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.right {
+  float: right;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.icon {
+  width: 1em; height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+.clearfix {
+  /* 触发 hasLayout */
+  zoom: 1;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.clearfix:after{
+  content: "020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
 }

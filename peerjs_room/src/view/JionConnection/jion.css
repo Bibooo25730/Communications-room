@@ -1,0 +1,27 @@
+.Connect{
+    margin: 2% 50%;
+
+}
+.Connect input {
+    font-family: ZpixReviewLocal;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid #00aaee;
+    background-color: #D3F4FF;
+    line-height: 30px;
+}
+.Connect .btnflex {
+    margin-top: 5px;
+    width: 162px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#preview {
+    width: 50%;
+    margin-top: 20px;
+}
+#preview span{
+    display: block;
+    text-align: center;
+}
